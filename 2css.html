@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+#header,
+#asideLeft,
+#article,
+#asideRight,
+#footer {
+border: 1px solid black;
+margin: 5px;
+text-align: center;
+}
+#header,
+#footer{
+  height:70px;
+  background-color:gray;
+}
+.grid-container{
+  display:grid;
+  grid-template-areas:
+  "leftSidebar article rightSidebar";
+}
+#asideLeft{
+  grid-area:leftSidebar;
+  background-color:pink;
+}
+#article{
+  grid-area:article;
+  background-color:yellow;
+  height:500px;
+}
+#asideRight{
+  grid-area:rightSidebar;
+  background-color:skyblue;
+}
+
+
+
+</style>
+</head>
+
+<body>
+<div id="header">Moomin Family</div>
+<div class="grid-container">
+<div id="asideLeft"><a href="1css.html"><img width=100% src="moomintroll.gif.crdownload" alt="">Moomintroll</a><br></div>
+<div id="article"><a href="https://www.youtube.com/watch?v=xOxNzufQ3goMoominmama"><img width=100% src="moomin.gif" alt="">Moominmama</a><br></div>
+<div id="asideRight"><a href="https://www.youtube.com/watch?v=pmBygCHpTGQMoominpapa"><img width=100% src="moomin2.gif" alt="">Moominpapa</a><br></div>
+</div>
+<div id="footer">Note</div>
+</body>
+</html>
